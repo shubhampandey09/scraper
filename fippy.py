@@ -26,7 +26,7 @@ product_list = []
 product_link_list = []
 
 # Getting product title and its link , into lists and printing them
-for e in obj.findAll("a", {'class': 'fk-display-block'} and {'data-tracking-id': 'prd_title'}, limit=10):
+for e in obj.findAll("a", {'class': 'fk-display-block'} and {'data-tracking-id': 'prd_title'}, limit=20):
     product_name = unicode(e.string)
     product_link = "http://www.flipkart.com/" + unicode(e['href'])
     product_list.append(product_name)
